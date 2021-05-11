@@ -1,4 +1,4 @@
-package br.com.chicorialabs.livedioprimeiroapp
+package br.com.chicorialabs.itauclonekt
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

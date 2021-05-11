@@ -1,4 +1,4 @@
-package br.com.chicorialabs.livedioprimeiroapp
+package br.com.chicorialabs.itauclonekt
 
 import android.view.LayoutInflater
 import android.view.View
