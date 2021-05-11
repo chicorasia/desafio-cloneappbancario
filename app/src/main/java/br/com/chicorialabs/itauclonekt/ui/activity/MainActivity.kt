@@ -8,10 +8,14 @@ import br.com.chicorialabs.itauclonekt.MenuItemAdapter
 import br.com.chicorialabs.itauclonekt.databinding.ActivityMainBinding
 import br.com.chicorialabs.itauclonekt.viewmodel.ListaServicosViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
+import org.koin.core.parameter.parametersOf
 
 class MainActivity : AppCompatActivity() {
 
-    private val mListaServicosViewModel: ListaServicosViewModel by viewModel()
+    private val mListaServicosViewModel: ListaServicosViewModel by viewModel {
+        parametersOf(resources)
+    }
+
     private lateinit var binding: ActivityMainBinding
     private val rv_list: RecyclerView by lazy {
         binding.rvList
@@ -23,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
         iniciaViews()
     }
 

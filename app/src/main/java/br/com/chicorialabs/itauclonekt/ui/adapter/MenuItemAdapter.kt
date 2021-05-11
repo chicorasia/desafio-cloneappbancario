@@ -3,7 +3,9 @@ package br.com.chicorialabs.itauclonekt
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import br.com.chicorialabs.itauclonekt.entidades.MenuItemModel
 
@@ -39,6 +41,8 @@ class MenuItemViewHolder(val itemView: View) :
 
             val tvTitle = itemView.findViewById(R.id.card_titulo) as TextView
             tvTitle.text = item.titulo
+            val tvIcon = itemView.findViewById(R.id.card_icone) as ImageView
+            tvIcon.setImageDrawable(item.icone)
         }
 
 }
