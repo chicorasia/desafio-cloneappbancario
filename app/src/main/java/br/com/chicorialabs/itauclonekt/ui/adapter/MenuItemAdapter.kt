@@ -1,4 +1,4 @@
-package br.com.chicorialabs.itauclonekt
+package br.com.chicorialabs.itauclonekt.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -16,7 +16,7 @@ class MenuItemAdapter : RecyclerView.Adapter<MenuItemViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: MenuItemViewHolder, position: Int) {
-        holder.iniciaVews(list[position])
+        holder.iniciaViews(list[position])
     }
 
     override fun getItemCount(): Int = list.size
@@ -33,7 +33,7 @@ class MenuItemViewHolder(private val binding: MenuItemBinding) :
     RecyclerView.ViewHolder(binding.root) {
 
 
-    fun iniciaVews(item: MenuItemModel) {
+    fun iniciaViews(item: MenuItemModel) {
 
         binding.cardTitulo.text = item.titulo
         binding.cardIcone.setImageDrawable(item.icone)

@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import br.com.chicorialabs.itauclonekt.MenuItemAdapter
 import br.com.chicorialabs.itauclonekt.databinding.ActivityMainBinding
+import br.com.chicorialabs.itauclonekt.ui.adapter.MenuItemAdapter
 import br.com.chicorialabs.itauclonekt.viewmodel.ListaServicosViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
