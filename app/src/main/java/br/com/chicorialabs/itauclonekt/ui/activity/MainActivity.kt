@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ActivityMainBinding
-    private val rv_list: RecyclerView by lazy {
+    private val rvList: RecyclerView by lazy {
         binding.rvList
     }
     private var adapter = MenuItemAdapter()
@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun iniciaViews() {
         adapter.setItensList(mListaServicosViewModel.listaServicos)
-        rv_list.adapter = adapter
-        rv_list.layoutManager = GridLayoutManager(this, 2)
+        rvList.adapter = adapter
+        rvList.layoutManager = GridLayoutManager(this, 2)
     }
 
 

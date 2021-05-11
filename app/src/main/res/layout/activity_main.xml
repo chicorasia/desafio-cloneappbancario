@@ -21,10 +21,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:textColor="#ed6f05"
-            android:text="Olá, Bruno"
+            android:text="@string/ola_bruno"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            />
+            android:layout_marginLeft="12dp" />
 
         <TextView
             android:id="@+id/tv_conta"
@@ -32,10 +32,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:textColor="#333"
-            android:text="Ag. 000-1 Conta: 1234-56"
+            android:text="@string/ag_conta"
             app:layout_constraintTop_toBottomOf="@id/tv_usuario"
             app:layout_constraintStart_toStartOf="parent"
-            />
+            android:layout_marginLeft="12dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:text="nossos serviços"
+            android:text="@string/nossos_servicos"
             android:textColor="#ed6f05"
             android:textSize="26sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +66,7 @@
             android:id="@+id/tv_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="disponíveis para você"
+            android:text="@string/disponiveis_para_voce"
             android:textSize="20sp"
             android:textColor="#333"
             app:layout_constraintStart_toStartOf="@id/tv_title"

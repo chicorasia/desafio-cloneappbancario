@@ -3,9 +3,11 @@ package br.com.chicorialabs.itauclonekt.viewmodel
 import android.content.res.Resources
 import androidx.core.content.res.ResourcesCompat.getDrawable
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import br.com.chicorialabs.itauclonekt.R
 import br.com.chicorialabs.itauclonekt.entidades.MenuItemModel
 import br.com.chicorialabs.itauclonekt.entidades.Servico
+import kotlinx.coroutines.launch
 
 class ListaServicosViewModel(val resources: Resources) : ViewModel() {
 
@@ -14,10 +16,12 @@ class ListaServicosViewModel(val resources: Resources) : ViewModel() {
         get() = _listaServicos
 
     init {
-        setItensLista()
+        viewModelScope.launch {
+            setItensLista()
+        }
     }
 
-    private fun setItensLista() {
+    fun setItensLista() {
 
         Servico.getTodos().forEach {
             _listaServicos.add(

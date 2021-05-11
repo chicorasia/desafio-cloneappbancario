@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LiveDioPrimeiroApp</string>
+    <string name="ola_bruno">Olá, Bruno</string>
+    <string name="ag_conta">Ag. 000-1 Conta: 1234-56</string>
+    <string name="nossos_servicos">nossos serviços</string>
+    <string name="disponiveis_para_voce">disponíveis para você</string>
+    <string name="titulo_do_item">titulo do item</string>
 </resources>

@@ -32,7 +32,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             style="bold"
-            android:text="titulo do item"/>
+            android:text="@string/titulo_do_item"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
