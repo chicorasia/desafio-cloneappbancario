@@ -1,11 +1,7 @@
 package br.com.chicorialabs.itauclonekt.viewmodel
 
-import android.view.Menu
-import androidx.datastore.core.DataStore
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import br.com.chicorialabs.itauclonekt.MenuItemModel
-import java.util.prefs.Preferences
+import br.com.chicorialabs.itauclonekt.entidades.MenuItemModel
 
 class ListaServicosViewModel() : ViewModel() {
 

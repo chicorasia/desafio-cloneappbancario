@@ -1,9 +1,10 @@
-package br.com.chicorialabs.itauclonekt
+package br.com.chicorialabs.itauclonekt.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import br.com.chicorialabs.itauclonekt.MenuItemAdapter
 import br.com.chicorialabs.itauclonekt.databinding.ActivityMainBinding
 import br.com.chicorialabs.itauclonekt.viewmodel.ListaServicosViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
